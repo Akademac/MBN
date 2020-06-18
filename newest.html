@@ -14,6 +14,136 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
     </head>
     <body>
+<!--Main nav  -->
+        <div id='main_nav'>
+            <span id='sections'>
+                Sections
+                <span id='sections_menu_icon'>
+                    <span class='sections_menu_icon'></span>
+                    <span class='sections_menu_icon'></span>
+                    <span class='sections_menu_icon'></span>
+                </span>
+            </span>
+            <span id='main_nav_span'>
+                <span class='main_nav_span'><a href='index.html'>Home</a></span>
+                <span class='main_nav_span'><a href='index.html#politics'>Politics</a></span>
+                <span class='main_nav_span'><a href='index.html#sports'>Sports</a></span>
+                <span class='main_nav_span'><a href='index.html#technologies'>Technologies</a></span>
+                <span class='main_nav_span'><a href='index.html#music'>Music</a></span>
+                <span class='main_nav_span'><a href='index.html#culture'>Culture</a></span>
+                <span class='main_nav_span'><a href='index.html#astronomy'>Astronomy</a></span>
+                <span class='main_nav_span'>
+                    More
+                    <i class="fas fa-sort-down" id='more_arrow_down'></i>
+                    <div id='nav_more'>more news comming soon</div>
+                </span>
+            </span>
+            <span id='logIn'>
+                    Log In
+                    <i class="fas fa-user"></i>
+            </span>
+            <span id='nav_search'>
+                <input type="text" name='navSearch' placeholder='Search' id='nav_input' />
+            </span>
+        </div>
+        <div id='section_mini_div'>
+            <span class='section_mini_class'>
+                <h3 class='sec_mini_h3' data-sec='1'>Politics</h3>
+                <ul class='section_mini_table' id='sec_mini_tab_pol'>
+                    <li>newest</li>
+                    <li>
+                        most important
+                        <ul id='most_important_mini'>
+                            <li>this week</li>
+                            <li>this month</li>
+                            <li>this year</li>
+                        </ul>
+                    </li>
+                </ul>
+            </span>
+            <span class='section_mini_class'>
+                <h3 class='sec_mini_h3' data-sec='2'>Sports</h3>
+                <ul class='section_mini_table' id='sec_mini_tab_sp'>
+                    <li>newest</li>
+                    <li>
+                        most important
+                        <ul id='most_important_mini'>
+                            <li>this week</li>
+                            <li>this month</li>
+                            <li>this year</li>
+                        </ul>
+                    </li>
+                </ul>			
+            </span>
+            <span class='section_mini_class'><h3 class='sec_mini_h3' data-sec='3'>Technologies</h3></span>
+            <span class='section_mini_class'>
+                <h3 class='sec_mini_h3' data-sec='4'>Music</h3>
+                <ul class='section_mini_table' id='sec_mini_tab_mus'>
+                    <li>newest</li>
+                    <li>
+                        most important
+                        <ul id='most_important_mini'>
+                            <li>this week</li>
+                            <li>this month</li>
+                            <li>this year</li>
+                        </ul>
+                    </li>
+                </ul>
+            </span>
+            <span class='section_mini_class'>
+                <h3 class='sec_mini_h3' data-sec='5'>Culture</h3>
+                <ul class='section_mini_table' id='sec_mini_tab_cul'>
+                    <li>newest</li>
+                    <li id='most_important_mini'>
+                        most important
+                        <ul>
+                            <li>this week</li>
+                            <li>this month</li>
+                            <li>this year</li>
+                        </ul>
+                    </li>
+                </ul>
 
+            </span>
+            <span class='section_mini_class'><h3 class='sec_mini_h3' data-sec='6'>Astronomy</h3></span>
+        </div>
+
+        <div id='newest_main_div'>
+            <div class='newest_divs' id='newest_first_div'>
+
+            </div>
+            <div class='newest_divs'>
+                <h2 id='newest_h2'>Coronavirus: China advises against travel to Wuhan as deaths surge</h2>
+            </div>
+            <div class='newest_divs'></div>
+            <div class='newest_divs'></div>
+            <div class='newest_divs'></div>
+            <div class='newest_divs'></div>
+            <div class='newest_divs'></div>
+            <div class='newest_divs'></div>
+            <div class='newest_divs'></div>
+            <div class='newest_divs'></div>
+            <div class='newest_divs'></div>
+        </div>
+
+        <!-- Footer -->
+
+		<div id='footer'>
+			<h2 id='footer_h'>Explore the MBN</h2>
+			<div id='footer_div'>
+				<div class='footer_divs'><a href='index.html#newest'>Newest</a></div>
+				<div class='footer_divs'><a href='index.html#politics'>Politics</a></div>
+				<div class='footer_divs'><a href='index.html#sports'>Sports</a></div>
+				<div class='footer_divs'><a href='index.html#tehnologies'>Technologies</a></div>
+				<div class='footer_divs'><a href='index.html#music'>Music</a></div>
+				<div class='footer_divs'><a href='index.html#astronomy'>Astronomy</a></div>
+				<div class='footer_divs'><a href='index.html#culture'>Culture</a></div>
+			</div>
+			<p id='footer_p'>Copyright © 2020 MBN. The MBN is not responsible for the content of external sites.</p>
+		</div>
+
+<!--Main JS -->
+
+        <script src='newest.js'></script>
     </body>
 </hmtl>
