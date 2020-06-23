@@ -19,6 +19,7 @@ more_arrow_down.addEventListener('click', () => {
 	}
 });
 
+
 //mini section DIV
 
 let section_btn = document.querySelector('#sections');
@@ -97,7 +98,7 @@ section_mini_h3.forEach(e => {
 
 newest_main_div.addEventListener('click', () => {
 	section_mini_div.style.marginLeft = -12 + 'rem';
-	newest_main_div.style.marginLeft = 0;
+	newest_main_div.style.margin = '0px auto';
 	x_sec = 1;
 	section_mini_table.forEach(e => {
 		e.style.display = 'none';
@@ -114,7 +115,8 @@ section_btn.addEventListener('click', () => {
 	}
 	else if(x_sec == 2){
 		section_mini_div.style.marginLeft = -12 + 'rem';
-		newest_main_div.style.marginLeft = 0;
+		newest_main_div.style.margin = '0px auto';
+
 		x_sec = 1;
 		section_mini_table.forEach(e => {
 			e.style.display = 'none';
