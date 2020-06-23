@@ -313,13 +313,14 @@ hr {
 }
 
 .newest {
-	display: flex;
+	/* display: flex;
 	align-items: center;
-	justify-content: flex-start;
+	justify-content: center; */
 	color: var(--mainWhite);
 	font-size: .8rem;
 	font-weight: bold;
 	padding-left: 2px;
+	padding-top: 10px;
 	cursor: pointer;
 }
 
