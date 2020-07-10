@@ -26,7 +26,7 @@ let section_btn = document.querySelector('#sections');
 let section_mini_div = document.querySelector('#section_mini_div');
 let section_mini_class = document.querySelectorAll('.section_mini_class');
 let section_mini_table = document.querySelectorAll('.section_mini_table');
-let newest_main_div = document.querySelector('#newest_main_div');
+let news_main_div = document.querySelector('#news_main_div');
 let section_mini_h3 = document.querySelectorAll('.sec_mini_h3');
 let section_mini_tab_pol = document.querySelector('#sec_mini_tab_pol');
 let section_mini_tab_sp = document.querySelector('#sec_mini_tab_sp');
@@ -96,9 +96,9 @@ section_mini_h3.forEach(e => {
 	});
 });
 
-newest_main_div.addEventListener('click', () => {
+news_main_div.addEventListener('click', () => {
 	section_mini_div.style.marginLeft = -12 + 'rem';
-	newest_main_div.style.margin = '0px auto';
+	news_main_div.style.margin = '0px auto';
 	x_sec = 1;
 	section_mini_table.forEach(e => {
 		e.style.display = 'none';
@@ -110,12 +110,12 @@ let x_sec = 1;
 section_btn.addEventListener('click', () => {
 	if(x_sec == 1) {
 		section_mini_div.style.marginLeft = 0;
-		newest_main_div.style.marginLeft = 12 + 'rem';
+		news_main_div.style.marginLeft = 12 + 'rem';
 		x_sec = x_sec + 1;
 	}
 	else if(x_sec == 2){
 		section_mini_div.style.marginLeft = -12 + 'rem';
-		newest_main_div.style.margin = '0px auto';
+		news_main_div.style.margin = '0px auto';
 
 		x_sec = 1;
 		section_mini_table.forEach(e => {
@@ -123,3 +123,8 @@ section_btn.addEventListener('click', () => {
 		});
 	}
 });
+
+
+//news
+
+
