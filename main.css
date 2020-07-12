@@ -155,11 +155,15 @@ hr {
 	margin-left: 1rem;
 	border: none;
 	border-radius: 2px;
-	background: var(--lightGrey);
+	background: var(--mainWhite);
 	border: 1px solid var(--mainBlack);
 	font-size: 1rem;
 	font-weight: bold;
 	outline: none;
+}
+
+#menu_bar {
+	display: none;
 }
 
 #section_mini_div {
@@ -220,6 +224,34 @@ hr {
 
 .section_mini_table > tr {
 	display: block;
+}
+
+.main_mini_nav_span_inactive {
+	display: none;
+	width: 100%;
+	height: 20rem;
+	background-color: var(--mainGrey);
+	color: var(--mainWhite);
+	text-align: center;
+	padding-top: 6rem;
+	position: fixed;
+	z-index: 500;
+
+}
+
+.main_mini_nav_span_active {
+	display: block;
+}
+
+.main_mini_nav_span {
+	color: white;
+	display: block;
+	font-size: 1.5rem;
+	margin-top: .5rem;
+}
+
+.main_mini_nav_span:hover {
+	text-decoration: underline;
 }
 
 /* Whole body div */
@@ -324,7 +356,7 @@ hr {
 	font-size: .8rem;
 	font-weight: bold;
 	padding-left: 2px;
-	padding-top: 4px;
+	/* padding-top: 4px; */
 	cursor: pointer;
 	background-position: center;
 	background-size: cover;
@@ -505,7 +537,6 @@ hr {
 	width: 85%;
 	height: 44.75rem;
 	margin: 0rem auto;
-	/* box-shadow: 1px 1px 5px var(--mainGrey); */
 
 }
 
@@ -678,7 +709,6 @@ hr {
 	display: grid;
 	grid-template-rows: 62% 38%;
 	background-color: var(--mainWhite);
-
 }
 
 #culture_h {
@@ -720,7 +750,7 @@ hr {
 }
 
 #culture_main_heading {
-	width:25rem;
+	width: 25rem;
 	height: 10rem;
 	background-color: var(--mainWhite);
 	padding: 2rem;
@@ -940,4 +970,396 @@ em {
 
 .comments {
 	float: right;
+}
+
+
+
+
+							/* Media querys */
+
+@media screen and (max-width: 1200px) {
+	/* Nav bar */
+	#main_nav_span {
+		display: none;
+	}
+
+	#logIn {
+		float: left;
+		position: absolute;
+	}
+
+	#sections  {
+		display: none;
+	}
+
+	#section_mini_div {
+		display: none;
+	}
+
+	#menu_bar {
+		display: block;
+		margin: 0px auto;
+		transition: 1s all;
+		cursor: pointer;
+
+	}
+
+	#nav_input {
+		position: absolute;
+		right: 5px;
+		bottom: 18px;
+	}
+
+	/* newest */
+	.newest {
+		font-size: .7rem;
+	} 
+	
+}
+
+@media screen and (max-width: 1000px) {
+	/* newest */
+	.newest {
+		font-size: .6rem;
+	} 
+
+	/* politics */
+	#politics  {
+		grid-template-columns: none;
+		grid-template-rows: repeat(2, 1fr);
+		height: 70rem;
+		border-left: none;
+	}
+
+	#main_pol_div {
+		display: grid;
+		height: 40rem;
+		grid-template-rows: 80% 20%;
+		margin: 10px;
+		padding: 5px;
+		border-radius: 5px;
+		text-align: center;
+	}
+
+	.politics_divs {
+		margin-top: 5rem;
+		border-left: none;
+		text-align: center;
+	}
+
+	/* music */
+	.music_desc > h2 {
+		padding: 2rem;
+		font-size: 1.2rem;
+	}
+	
+	.music_desc > p {
+		font-size: .8rem;
+	}
+	
+}
+
+@media screen and (max-width: 700px) {
+
+	/* newest */
+	#newest {
+		width: 400%;
+	}
+
+	.newest {
+		font-size: .8rem;
+		width: 10rem;
+	} 
+
+	/* politics */
+	#politics {
+		width: 85%;
+		height: 80rem;
+	}
+
+	/*Sport*/
+	#sports {
+		width: 85%;
+		height: 35rem;
+	}
+
+	.sports_div_h {
+		font-size: 1rem;
+	}
+
+	/* technologies */
+	#technologies {
+		width: 85%;
+		height: 34.75rem;
+		margin: 0rem auto;
+		margin-bottom: -10rem;
+	}
+
+	/* music */
+	#music {
+		width: 85%;
+		height: 30rem;
+		background: var(--mainWhite);
+		margin: 14rem auto;
+	}
+
+	#music_h {
+		color: var(--mainBlack);
+		font-size: 2rem;
+		width: 10rem;
+		height: 3rem;
+		margin-left: 5rem;
+
+	}
+
+	.music_desc > h2 {
+		padding: 1.3rem;
+		font-size: 1rem;
+	}
+	
+	.music_desc > p {
+		padding: 1rem;
+		width: 80%;
+		margin: -2rem auto;
+		line-break: 2;
+		line-height: 1;
+	}
+
+	.music_read_more {
+		width: 4rem;
+		height: 2rem;
+		padding: 2px;
+		margin: 2rem auto;
+		font-size: .6rem;
+	}
+
+	/* culture */
+	#culture {
+		height: 45rem;
+		width: 85%;
+		grid-template-rows: 50% 50%;
+		margin-bottom: 25rem;
+	}
+
+	#culture_main {
+		display: grid;
+		width: 100%;
+		grid-template-columns: none;
+		grid-template-rows: repeat(2, 1fr);
+	}
+
+	#culture_main_heading {
+		width: 10em;
+		height: 5rem;
+		margin-top: -2rem;
+		margin-left: 1rem;
+	}
+
+	#culture_other {
+		display: grid;
+		grid-template-columns: none;
+		grid-template-rows: repeat(3, 1fr);
+		grid-gap: 1.5rem;
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	}
+
+	.culture_other {
+		display: grid;
+		grid-template-rows: none;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 3rem;
+		margin-top: 2rem;
+	}
+
+	#astronomy {
+		height: 24.75rem;
+	}
+	
+	/* footer */
+	#footer {
+		width: 100%;
+		height: 40rem;
+	}
+
+	#footer_h {
+		margin: 2rem auto;
+		text-align: center;
+	}
+
+	#footer_div {
+		width: 40%;
+		height: 60%;
+		margin: 0rem auto;
+		grid-template-columns: none;
+		grid-template-rows: repeat(7, 1fr);
+
+	}
+
+	#footer_p {
+		text-align: center;
+	}
+		
+}
+
+
+@media screen and (max-width: 500px) {
+	/* nav */
+	#logIn {
+		width: 4rem;
+		height: 1.5rem;
+		font-size: .7rem;
+		padding-left: 5px;
+		margin-left: 1rem;
+	}
+
+	.fa-user {
+		margin-left: .5rem;
+	}
+
+	#nav_input {
+		width: 4rem;
+		right: 1rem;
+		font-size: .8rem;
+	}
+
+	/*main header  */
+	#main_heading {
+		width: 100%;
+		font-size: 2rem;
+		height: 7rem;
+		text-align: center;
+		font-family: 'Bowlby One SC', cursive;
+	}
+
+	#date {
+		font-size: .8rem;
+	}
+	
+	#welcome_p {
+		font-size: .8rem;
+	}
+
+	/*Politics*/
+	#politics_h {
+		font-size: 1rem;
+		width: 7rem;
+		height: 2rem;
+	}
+
+	#politics  {
+		grid-template-columns: none;
+		grid-template-rows: 40% 60%;
+		height: 70rem;
+		border-left: none;
+	}
+
+	#main_pol_div {
+		display: grid;
+		grid-template-rows: 40% 60%;
+		margin: 10px;
+		padding: 5px;
+		border-radius: 5px;
+	}
+
+	/* sports */
+	#sports_h {
+		font-size: 1rem;
+		width: 7rem;
+		height: 2rem;
+	}
+
+	.all_sports {
+		font-size: .65rem;
+	}
+
+	#sports {
+		width: 85%;
+		height: 25rem;
+		margin: 14rem auto;
+	}
+
+	#sports_div {
+		margin: .6rem auto;
+		width: 90%;
+		height: 70%;
+	}
+	
+	/* technologies */
+	#technologies {
+		width: 85%;
+		height: 18.75rem;
+		margin: -8rem auto;
+		margin-bottom: -8rem;
+	}
+
+	#tech_h {
+		font-size: 1rem;
+		width: 7rem;
+		height: 2rem;
+		margin: 1rem;
+	}
+
+	/* music */
+	#music_h {
+		font-size: 1rem;
+		width: 7rem;
+		height: 2rem;
+		margin: 3.5rem;	
+		margin-left: 3rem;
+	}
+
+	#music {
+		width: 85%;
+		height: 20rem;
+		background: var(--mainWhite);
+		margin: 8rem auto;
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(12, 1fr);
+		text-align: center;
+		z-index: 30;
+	}
+	
+	.music_desc > p {
+		display: none;
+	}
+
+	.music_read_more {
+		height: 1.5rem;
+		color: var(--mainWhite);
+		padding: 2px;
+		margin: -1rem auto;
+	}
+
+	/* culture */
+	#culture_h {
+		font-size: 1rem;
+		width: 7rem;
+		height: 2rem;
+		margin: 1rem;
+	}
+
+	#culture {
+		width: 85%;
+		height: 45rem;
+		display: grid;
+		background-color: var(--mainWhite);
+		margin-top: -2rem;
+	}
+	
+	#astr_h {
+		font-size: 1rem;
+		width: 7rem;
+		height: 2rem;
+		margin: 1rem;
+	}
+
+	#astronomy {
+		width: 85%;
+		height: 14.75rem;
+		margin: 0rem auto;
+		/* box-shadow: 1px 1px 5px var(--mainGrey); */
+	
+	}
+	
 }

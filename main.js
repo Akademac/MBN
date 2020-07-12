@@ -19,6 +19,27 @@ more_arrow_down.addEventListener('click', () => {
 	}
 });
 
+//responsive nav
+
+let menu_bar_x = 0;
+
+let menu_bar = document.querySelector('#menu_bar');
+let mini_nav = document.querySelector('.main_mini_nav_span_inactive');
+
+	menu_bar.addEventListener('click', () => {
+		if(menu_bar_x == 0) {
+			mini_nav.classList.add('main_mini_nav_span_active');
+			menu_bar.style.transform = 'rotate(180deg)';
+			menu_bar_x = menu_bar_x+1;
+		}
+		else if(menu_bar_x > 0) {
+			mini_nav.classList.remove('main_mini_nav_span_active');
+			menu_bar.style.transform = 'rotate(-180deg)';
+			menu_bar_x = menu_bar_x-1;
+		}
+	});
+
+
 //date 
 
 (function date () {
@@ -139,7 +160,6 @@ section_btn.addEventListener('click', () => {
 
 //newest
 
-let newest_h = document.querySelectorAll('.newest');
 let newest_div = document.querySelector('#newest');
 let newest_interval;
 newest_x = 1;
@@ -317,23 +337,12 @@ let fetching_data_lp = d => {
 			culture_main_p.innerHTML = d[4].culture_main.news;
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Second Page NEWS
+
+
+newest.forEach(e => {
+	e.addEventListener('click', () => {
+		window.open('news.html', '_self');
+	});
+});
 
