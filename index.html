@@ -47,17 +47,21 @@
 			<input type="text" name='navSearch' placeholder='Search' id='nav_input' />
 		</span>
 	</div>
+
+<!-- Section Mini Nav -->
+
+
 	<div id='section_mini_div'>
 		<span class='section_mini_class'>
 			<h3 class='sec_mini_h3' data-sec='1'>Politics</h3>
 			<ul class='section_mini_table' id='sec_mini_tab_pol'>
-				<li>newest</li>
+				<li id='section_main_pol'>main</li>
 				<li>
-					most popular
+					most
 					<ul id='most_popular_mini'>
-						<li>this week</li>
-						<li>this month</li>
-						<li>this year</li>
+						<li class='sec_likes' data-most_likes='most_likes_politics'>likes</li>
+						<li class='sec_unlikes' data-most_unlikes='most_unlikes_politics'>unlikes</li>
+						<li class='sec_comments'data-most_comments='most_comments_politics'>comments</li>
 					</ul>
 				</li>
 			</ul>
@@ -65,13 +69,13 @@
 		<span class='section_mini_class'>
 			<h3 class='sec_mini_h3' data-sec='2'>Sports</h3>
 			<ul class='section_mini_table' id='sec_mini_tab_sp'>
-				<li>newest</li>
+				<li id='section_main_sports'>main</li>
 				<li>
-					most popular
+					most
 					<ul id='most_popular_mini'>
-						<li>this week</li>
-						<li>this month</li>
-						<li>this year</li>
+						<li class='sec_likes' data-most_likes='most_likes_sports'>likes</li>
+						<li class='sec_unlikes' data-most_unlikes='most_unlikes_sports'>unlikes</li>
+						<li class='sec_comments'data-most_comments='most_comments_sports'>comments</li>
 					</ul>
 				</li>
 			</ul>			
@@ -80,13 +84,13 @@
 		<span class='section_mini_class'>
 			<h3 class='sec_mini_h3' data-sec='4'>Music</h3>
 			<ul class='section_mini_table' id='sec_mini_tab_mus'>
-				<li>newest</li>
+				<li id='section_main_mus'>main</li>
 				<li>
-					most popular
+					most
 					<ul id='most_popular_mini'>
-						<li>this week</li>
-						<li>this month</li>
-						<li>this year</li>
+						<li class='sec_likes' data-most_likes='most_likes_music'>likes</li>
+						<li class='sec_unlikes' data-most_unlikes='most_unlikes_music'>unlikes</li>
+						<li class='sec_comments'data-most_comments='most_comments_music'>comments</li>
 					</ul>
 				</li>
 			</ul>
@@ -94,13 +98,13 @@
 		<span class='section_mini_class'>
 			<h3 class='sec_mini_h3' data-sec='5'>Culture</h3>
 			<ul class='section_mini_table' id='sec_mini_tab_cul'>
-				<li>newest</li>
+				<li id='section_main_cult'>main</li>
 				<li id='most_popular_mini'>
-					most popular
+					most
 					<ul>
-						<li>this week</li>
-						<li>this month</li>
-						<li>this year</li>
+						<li class='sec_likes' data-most_likes='most_likes_culture'>likes</li>
+						<li class='sec_unlikes' data-most_unlikes='most_unlikes_culture'>unlikes</li>
+						<li class='sec_comments'data-most_comments='most_comments_culture'>comments</li>
 					</ul>
 				</li>
 			</ul>
@@ -135,17 +139,18 @@
 
 		<div id='newest_wrap'>
 			<div id='newest'>
-				<div id='newest_h'>Newest</div>
-				<div class='newest'></div>
-				<div class='newest'></div>
-				<div class='newest'></div>
-				<div class='newest'></div>
-				<div class='newest'></div>
-				<div class='newest'></div>
-				<div class='newest'></div>
-				<div class='newest'></div>
-				<div class='newest'></div>
-				<div class='newest'></div>
+				<div id='newest_h' data-second_page='1' class='second_page'>Newest</div>
+				<div class='newest' data-newest='0'></div>
+				<div class='newest' data-newest='1'></div>
+				<div class='newest' data-newest='2'></div>
+				<div class='newest' data-newest='3'></div>
+				<div class='newest' data-newest='4'></div>
+				<div class='newest' data-newest='5'></div>
+				<div class='newest' data-newest='6'></div>
+				<div class='newest' data-newest='7'></div>
+				<div class='newest' data-newest='8'></div>
+				<div class='newest' data-newest='9'></div>
+
 			</div>
 		</div>
 		<hr id='hr_2' />
@@ -155,7 +160,7 @@
 		<div id='politics'>
 			<div id='main_pol_div'>
 				<div id='main_pol_div_img'>
-					<div id='politics_h'>Politics</div>
+					<div id='politics_h' data-second_page='2' class='second_page'>Politics</div>
 				</div>
 				<div id='main_pol_div_h'>
 					<h2 id='main_pol_h'></h2>
@@ -164,19 +169,19 @@
 			</div>
 			<div class='politics_divs'>
 				<div class='pol_other'>		
-					<h3 class='pol_other_h3'></h3>
+					<h3 class='pol_other_h3' data-pol='pol_first'></h3>
 					<p class='pol_other_p'></p>		
 				</div>
 				<div class='pol_other'>		
-					<h3 class='pol_other_h3'></h3>
+					<h3 class='pol_other_h3' data-pol='pol_second'></h3>
 					<p class='pol_other_p'></p>						
 				</div>
 				<div class='pol_other'>
-					<h3 class='pol_other_h3'></h3>
+					<h3 class='pol_other_h3' data-pol='pol_third'></h3>
 					<p class='pol_other_p'></p>								
 				</div>
 				<div class='pol_other'>
-					<h3 class='pol_other_h3'></h3>
+					<h3 class='pol_other_h3' data-pol='pol_fourth'></h3>
 					<p class='pol_other_p'></p>
 				</div>
 			</div>
@@ -185,7 +190,7 @@
 <!--Sports  -->
 
 		<div id='sports'>
-			<div id='sports_h'>Sports</div>
+			<div id='sports_h' data-second_page='3' class='second_page'>Sports</div>
 			<div id='all_sports'>
 				<span class='all_sports' id='actual'>current</span>
 				<span class='all_sports' id='football'>Football</span>
@@ -194,16 +199,16 @@
 				<span class='all_sports' id='others'>others</span>
 			</div>
 			<div id='sports_div'>
-				<div class='sports_div'>
+				<div class='sports_div' data-sports='sport_first'>
 					<span class='sports_div_h'></span>
 				</div>
-				<div class='sports_div'>
+				<div class='sports_div' data-sports='sport_second' >
 					<span class='sports_div_h'></span>
 				</div>
-				<div class='sports_div'>
+				<div class='sports_div' data-sports='sport_third'>
 					<span class='sports_div_h'></span>
 				</div>
-				<div class='sports_div'>
+				<div class='sports_div' data-sports='sport_fourth'>
 					<span class='sports_div_h'></span>
 				</div>
 			</div>
@@ -212,48 +217,49 @@
 <!-- Technologies  -->
 	
 		<div id='technologies'>
-			<div id='tech_h' title='Click here for more'>Technologies</div>
+			<div id='tech_h' title='Click here for more' data-second_page='4' class='second_page'>Technologies</div>
 			<div id='video_div_tech'>
 				<video class='video_tech' src='Video/video_3.mp4'></video>
 			</div>
 		</div>
 
 <!-- Music -->
-		<div id='music_h'>Music</div>
+
+		<div id='music_h' data-second_page='5' class='second_page'>Music</div>
 		<div id='music'>
 			<div class='music music_b'>
 				<div class='music_desc'>
 					<h2 class='music_h'></h2>
 					<p class='music_p'></p>
 				</div>
-				<div class='music_read_more'>Read more</div>
+				<div class='music_read_more' data-music='music_first'>Read more</div>
 			</div>	
 			<div class='music music_b'>
 				<div class='music_desc'>
 					<h2 class='music_h'></h2>
 					<p class='music_p'></p>
 				</div>
-				<div class='music_read_more'>Read more</div>
+				<div class='music_read_more' data-music='music_second'>Read more</div>
 			</div>
 			<div class='music music_b'>
 				<div class='music_desc'>
 					<h2 class='music_h'></h2>
 					<p class='music_p'></p>
 				</div>
-				<div class='music_read_more'>Read more</div>
+				<div class='music_read_more' data-music='music_third'>Read more</div>
 			</div>
 			<div class='music music_b'>
 				<div class='music_desc'>
 					<h2 class='music_h'></h2>
 					<p class='music_p'></p>
 				</div>
-				<div class='music_read_more'>Read more</div>
+				<div class='music_read_more' data-music='music_fourth'>Read more</div>
 			</div>
 			<div class='music'>
 				<div class='music_desc'>
 					<h2 class='music_h'></h2>
 					<p class='music_p'></p>
-					<div class='music_read_more'>Read more</div>
+					<div class='music_read_more' data-music='music_fifth'>Read more</div>
 				</div>
 			</div>
 		</div>
@@ -263,7 +269,7 @@
 		<div id='culture'>
 			<div id='culture_main'>
 				<div id='culture_main_first'>
-					<div id='culture_h' >Culture</div>
+					<div id='culture_h' data-second_page='6' class='second_page' >Culture</div>
 				</div>
 				<div id='culture_main_second'>
 					<div id='culture_main_heading'>
@@ -273,22 +279,22 @@
 				</div>
 			</div>
 			<div id='culture_other'>
-				<div class='culture_other'>
-					<img src="Images/culture_img/culture_other_1.jpg" alt="Not Found" />
+				<div class='culture_other' >
+					<img src="Images/culture_img/culture_other_1.jpg" alt="Not Found" data-culture='culture_first' />
 					<div>
 						<h2 class='culture_h'></h2>
 						<p class='culture_p'></p>
 					</div>
 				</div>
 				<div class='culture_other'>
-					<img src="Images/culture_img/culture_other_2.jpg" alt="Not Found" />
+					<img src="Images/culture_img/culture_other_2.jpg" alt="Not Found"  data-culture='culture_second' />
 					<div>
 						<h2 class='culture_h'></h2>
 						<p class='culture_p'></p>
 					</div>
 				</div>
 				<div class='culture_other'>
-					<img src="Images/culture_img/culture_other_3.jpg" alt="Not Found" />
+					<img src="Images/culture_img/culture_other_3.jpg" alt="Not Found"  data-culture='culture_third' />
 					<div>
 						<h2 class='culture_h'></h2>
 						<p class='culture_p'></p>
@@ -300,7 +306,7 @@
 <!-- Astronomy  -->
 			
 		<div id='astronomy'>
-			<div id='astr_h' title='Click here for more'>Astronomy</div>
+			<div id='astr_h' title='Click here for more' data-second_page='7' class='second_page'>Astronomy</div>
 			<div id='video_div_astr'>
 				<video class='video_astr' src='Video/video_4.mp4'></video>
 			</div>

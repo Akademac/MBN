@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>News Single</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+	<link rel='icon' type='img.png' href='Icons/main_icon.png' />
+
+<!-- Main CSS -->
+<link rel='stylesheet' type='text/css' href='main.css' />
+<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />    
+</head>
+<body>
+<!--Main nav  -->
+    <div id='main_nav'>
+        <span id='sections'>
+            Sections
+            <span id='sections_menu_icon'>
+                <span class='sections_menu_icon'></span>
+                <span class='sections_menu_icon'></span>
+                <span class='sections_menu_icon'></span>
+            </span>
+        </span>
+        <span id='main_nav_span'>
+            <span class='main_nav_span'><a href='index.html'>Home</a></span>
+            <span class='main_nav_span'><a href='index.html#politics'>Politics</a></span>
+            <span class='main_nav_span'><a href='index.html#sports'>Sports</a></span>
+            <span class='main_nav_span'><a href='index.html#technologies'>Technologies</a></span>
+            <span class='main_nav_span'><a href='index.html#music'>Music</a></span>
+            <span class='main_nav_span'><a href='index.html#culture'>Culture</a></span>
+            <span class='main_nav_span'><a href='index.html#astronomy'>Astronomy</a></span>
+            <span class='main_nav_span'>
+                More
+                <i class="fas fa-sort-down" id='more_arrow_down'></i>
+                <div id='nav_more'>more news comming soon</div>
+            </span>
+        </span>
+        <i class="fas fa-ellipsis-h menu_bar" id='menu_bar'></i>
+        <span id='logIn' title="This featur is comming soon">
+                Log In
+                <i class="fas fa-user"></i>
+        </span>
+        <span id='nav_search' title="This featur is comming soon">
+            <input type="text" name='navSearch' placeholder='Search' id='nav_input' />
+        </span>
+    </div>
+	<div id='section_mini_div'>
+		<span class='section_mini_class'>
+			<h3 class='sec_mini_h3' data-sec='1'>Politics</h3>
+			<ul class='section_mini_table' id='sec_mini_tab_pol'>
+				<li id='section_main_pol'>main</li>
+				<li>
+					most
+					<ul id='most_popular_mini'>
+						<li class='sec_likes' data-most_likes='most_likes_politics'>likes</li>
+						<li class='sec_unlikes' data-most_unlikes='most_unlikes_politics'>unlikes</li>
+						<li class='sec_comments'data-most_comments='most_comments_politics'>comments</li>
+					</ul>
+				</li>
+			</ul>
+		</span>
+		<span class='section_mini_class'>
+			<h3 class='sec_mini_h3' data-sec='2'>Sports</h3>
+			<ul class='section_mini_table' id='sec_mini_tab_sp'>
+				<li id='section_main_sports'>main</li>
+				<li>
+					most
+					<ul id='most_popular_mini'>
+						<li class='sec_likes' data-most_likes='most_likes_sports'>likes</li>
+						<li class='sec_unlikes' data-most_unlikes='most_unlikes_sports'>unlikes</li>
+						<li class='sec_comments'data-most_comments='most_comments_sports'>comments</li>
+					</ul>
+				</li>
+			</ul>			
+		</span>
+		<span class='section_mini_class'><h3 class='sec_mini_h3' data-sec='3'>Technologies</h3></span>
+		<span class='section_mini_class'>
+			<h3 class='sec_mini_h3' data-sec='4'>Music</h3>
+			<ul class='section_mini_table' id='sec_mini_tab_mus'>
+				<li id='section_main_mus'>main</li>
+				<li>
+					most
+					<ul id='most_popular_mini'>
+						<li class='sec_likes' data-most_likes='most_likes_music'>likes</li>
+						<li class='sec_unlikes' data-most_unlikes='most_unlikes_music'>unlikes</li>
+						<li class='sec_comments'data-most_comments='most_comments_music'>comments</li>
+					</ul>
+				</li>
+			</ul>
+		</span>
+		<span class='section_mini_class'>
+			<h3 class='sec_mini_h3' data-sec='5'>Culture</h3>
+			<ul class='section_mini_table' id='sec_mini_tab_cul'>
+				<li id='section_main_cult'>main</li>
+				<li id='most_popular_mini'>
+					most
+					<ul>
+						<li class='sec_likes' data-most_likes='most_likes_culture'>likes</li>
+						<li class='sec_unlikes' data-most_unlikes='most_unlikes_culture'>unlikes</li>
+						<li class='sec_comments'data-most_comments='most_comments_culture'>comments</li>
+					</ul>
+				</li>
+			</ul>
+
+		</span>
+		<span class='section_mini_class'><h3 class='sec_mini_h3' data-sec='6'>Astronomy</h3></span>
+	</div>
+
+    <span class='main_mini_nav_span_inactive'>
+        <span class='main_mini_nav_span'><a href='index.html'>Home</a></span>
+        <span class='main_mini_nav_span'><a href='index.html#politics'>Politics</a></span>
+        <span class='main_mini_nav_span'><a href='index.html#sports'>Sports</a></span>
+        <span class='main_mini_nav_span'><a href='index.html#technologies'>Technologies</a></span>
+        <span class='main_mini_nav_span'><a href='index.html#music'>Music</a></span>
+        <span class='main_mini_nav_span'><a href='index.html#culture'>Culture</a></span>
+        <span class='main_mini_nav_span'><a href='index.html#astronomy'>Astronomy</a></span>
+    </span>
+
+<!--News single main div  -->
+   
+    <h1 id='main_single_h1'></h1>
+
+    <div id='news_single_main_div'>
+        <div id='main_single_news'>
+        </div>
+        <div id='other_single_news'>
+            <div class='other_single_news'>
+                <!-- <div class='other_single_newss'>
+                    <img src='Images/newest_img/newest_2.jpg' class='other_single_img' />
+                    <h3 class='other_single_h3'>Jeff Bezos hack: UN experts demand probe of Saudi crown prince</h3>
+                </div> -->
+           </div>
+        </div>
+    </div>
+
+<!-- Footer -->
+
+    <div id='footer'>
+        <h2 id='footer_h'>Explore the MBN</h2>
+        <div id='footer_div'>
+            <div class='footer_divs'><a href='index.html#newest'>Newest</a></div>
+            <div class='footer_divs'><a href='index.html#politics'>Politics</a></div>
+            <div class='footer_divs'><a href='index.html#sports'>Sports</a></div>
+            <div class='footer_divs'><a href='index.html#tehnologies'>Technologies</a></div>
+            <div class='footer_divs'><a href='index.html#music'>Music</a></div>
+            <div class='footer_divs'><a href='index.html#astronomy'>Astronomy</a></div>
+            <div class='footer_divs'><a href='index.html#culture'>Culture</a></div>
+        </div>
+        <p id='footer_p'>Copyright © 2020 MBN. The MBN is not responsible for the content of external sites.</p>
+    </div>
+    </div>
+
+<!--Main JS -->
+    <script src='news_single.js'></script>
+</body>
+</html>

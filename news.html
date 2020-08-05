@@ -38,6 +38,7 @@
                     <div id='nav_more'>more news comming soon</div>
                 </span>
             </span>
+	    	<i class="fas fa-ellipsis-h menu_bar" id='menu_bar'></i>
             <span id='logIn'>
                     Log In
                     <i class="fas fa-user"></i>
@@ -46,497 +47,91 @@
                 <input type="text" name='navSearch' placeholder='Search' id='nav_input' />
             </span>
         </div>
+
 <!-- Section Mini Nav -->
-        <div id='section_mini_div'>
-            <span class='section_mini_class'>
-                <h3 class='sec_mini_h3' data-sec='1'>Politics</h3>
-                <ul class='section_mini_table' id='sec_mini_tab_pol'>
-                    <li>newest</li>
-                    <li>
-                        most important
-                        <ul id='most_important_mini'>
-                            <li>this week</li>
-                            <li>this month</li>
-                            <li>this year</li>
-                        </ul>
-                    </li>
+<div id='section_mini_div'>
+    <span class='section_mini_class'>
+        <h3 class='sec_mini_h3' data-sec='1'>Politics</h3>
+        <ul class='section_mini_table' id='sec_mini_tab_pol'>
+            <li id='section_main_pol'>main</li>
+            <li>
+                most
+                <ul id='most_popular_mini'>
+                    <li class='sec_likes' data-most_likes='most_likes_politics'>likes</li>
+                    <li class='sec_unlikes' data-most_unlikes='most_unlikes_politics'>unlikes</li>
+                    <li class='sec_comments'data-most_comments='most_comments_politics'>comments</li>
                 </ul>
-            </span>
-            <span class='section_mini_class'>
-                <h3 class='sec_mini_h3' data-sec='2'>Sports</h3>
-                <ul class='section_mini_table' id='sec_mini_tab_sp'>
-                    <li>newest</li>
-                    <li>
-                        most important
-                        <ul id='most_important_mini'>
-                            <li>this week</li>
-                            <li>this month</li>
-                            <li>this year</li>
-                        </ul>
-                    </li>
-                </ul>			
-            </span>
-            <span class='section_mini_class'><h3 class='sec_mini_h3' data-sec='3'>Technologies</h3></span>
-            <span class='section_mini_class'>
-                <h3 class='sec_mini_h3' data-sec='4'>Music</h3>
-                <ul class='section_mini_table' id='sec_mini_tab_mus'>
-                    <li>newest</li>
-                    <li>
-                        most important
-                        <ul id='most_important_mini'>
-                            <li>this week</li>
-                            <li>this month</li>
-                            <li>this year</li>
-                        </ul>
-                    </li>
+            </li>
+        </ul>
+    </span>
+    <span class='section_mini_class'>
+        <h3 class='sec_mini_h3' data-sec='2'>Sports</h3>
+        <ul class='section_mini_table' id='sec_mini_tab_sp'>
+            <li id='section_main_sports'>main</li>
+            <li>
+                most
+                <ul id='most_popular_mini'>
+                    <li class='sec_likes' data-most_likes='most_likes_sports'>likes</li>
+                    <li class='sec_unlikes' data-most_unlikes='most_unlikes_sports'>unlikes</li>
+                    <li class='sec_comments'data-most_comments='most_comments_sports'>comments</li>
                 </ul>
-            </span>
-            <span class='section_mini_class'>
-                <h3 class='sec_mini_h3' data-sec='5'>Culture</h3>
-                <ul class='section_mini_table' id='sec_mini_tab_cul'>
-                    <li>newest</li>
-                    <li id='most_important_mini'>
-                        most important
-                        <ul>
-                            <li>this week</li>
-                            <li>this month</li>
-                            <li>this year</li>
-                        </ul>
-                    </li>
+            </li>
+        </ul>			
+    </span>
+    <span class='section_mini_class'><h3 class='sec_mini_h3' data-sec='3'>Technologies</h3></span>
+    <span class='section_mini_class'>
+        <h3 class='sec_mini_h3' data-sec='4'>Music</h3>
+        <ul class='section_mini_table' id='sec_mini_tab_mus'>
+            <li id='section_main_mus'>main</li>
+            <li>
+                most
+                <ul id='most_popular_mini'>
+                    <li class='sec_likes' data-most_likes='most_likes_music'>likes</li>
+                    <li class='sec_unlikes' data-most_unlikes='most_unlikes_music'>unlikes</li>
+                    <li class='sec_comments'data-most_comments='most_comments_music'>comments</li>
                 </ul>
-            </span>
-            <span class='section_mini_class'><h3 class='sec_mini_h3' data-sec='6'>Astronomy</h3></span>
-        </div>
+            </li>
+        </ul>
+    </span>
+    <span class='section_mini_class'>
+        <h3 class='sec_mini_h3' data-sec='5'>Culture</h3>
+        <ul class='section_mini_table' id='sec_mini_tab_cul'>
+            <li id='section_main_cult'>main</li>
+            <li id='most_popular_mini'>
+                most
+                <ul>
+                    <li class='sec_likes' data-most_likes='most_likes_culture'>likes</li>
+                    <li class='sec_unlikes' data-most_unlikes='most_unlikes_culture'>unlikes</li>
+                    <li class='sec_comments'data-most_comments='most_comments_culture'>comments</li>
+                </ul>
+            </li>
+        </ul>
+
+    </span>
+    <span class='section_mini_class'><h3 class='sec_mini_h3' data-sec='6'>Astronomy</h3></span>
+</div>
+
 
 <!-- Main Div -->
 
+    <span class='main_mini_nav_span_inactive'>
+        <span class='main_mini_nav_span'><a href='index.html'>Home</a></span>
+        <span class='main_mini_nav_span'><a href='index.html#politics'>Politics</a></span>
+        <span class='main_mini_nav_span'><a href='index.html#sports'>Sports</a></span>
+        <span class='main_mini_nav_span'><a href='index.html#technologies'>Technologies</a></span>
+        <span class='main_mini_nav_span'><a href='index.html#music'>Music</a></span>
+        <span class='main_mini_nav_span'><a href='index.html#culture'>Culture</a></span>
+        <span class='main_mini_nav_span'><a href='index.html#astronomy'>Astronomy</a></span>
+    </span>
+
     <div id='wrap_div'>
         <div id='news_main_div'>
-            <div class='news_divs'>
-                <hr class='other_page_hr' />
-                <h2 id='news_h2'>Coronavirus: China advises against travel to Wuhan as deaths surge</h2>
-                <p id='news_p'>
-                    <img src='Images/culture_img/culture_other_1.jpg' alt='Not found!' id='news_img' />
-                    <em>L</em>orem ipsum dolor sit, amet consectetur adipisicing elit. Quod harum asperiores por
-                    ro voluptate maxime iste est? Nostrum reiciendis doloremque vel perspiciat
-                    is. Possimus, veniam laudantium at amet molestias quis doloremque fugiat?
-                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sun
-                    t explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                     magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia 
-                     dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut la
-                     bore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exerci
-                     tationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-                      vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, ve
-                      l illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus
-                      antium doloremque laudantium, totam rem aperiam, eaque ipsa quae 
-                      ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt 
-                      explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit au
-                      t fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi ne
-                      sciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu
-                      r, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore ma
-                      nam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam co
-                      rporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure r
-                      eprehenderit qui in ea voluptate velit esse quam nihil moles
-                      tiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                       laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi a
-                       rchitecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas s
-                       it aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione volu
-                       ptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, co
-                       nsectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dol
-                       ore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitatione
-                       m ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem 
-                       vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae co
-                      nsequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                </p>
-                <span class='likes'>
-                    <i class="far fa-thumbs-up"></i>
-                    <span class='like'>12</span>
-                    <i class="far fa-thumbs-down"></i>
-                    <span class='unlike'>0</span>
-                </span>
-                <span class='date_other'>12. 02. 2020</span>
-                <span class='comments'>
-                    <i class="far fa-comment"></i>
-                    <span class='comments_s'>2</span>
-                </span>
-                <hr class='other_page_hr' />
-            </div>
-            <div class='news_divs'>
-                <h2 id='news_h2'>Coronavirus: China advises against travel to Wuhan as deaths surge</h2>
-                <p id='news_p'>
-                    <img src='Images/culture_img/culture_other_1.jpg' alt='Not found!' id='news_img' />
-                    <em>L</em>orem ipsum dolor sit, amet consectetur adipisicing elit. Quod harum asperiores por
-                    ro voluptate maxime iste est? Nostrum reiciendis doloremque vel perspiciat
-                    is. Possimus, veniam laudantium at amet molestias quis doloremque fugiat?
-                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sun
-                    t explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                     magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia 
-                     dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut la
-                     bore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exerci
-                     tationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-                      vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, ve
-                      l illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus
-                      antium doloremque laudantium, totam rem aperiam, eaque ipsa quae 
-                      ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt 
-                      explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit au
-                      t fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi ne
-                      sciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu
-                      r, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore ma
-                      nam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam co
-                      rporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure r
-                      eprehenderit qui in ea voluptate velit esse quam nihil moles
-                      tiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                       laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi a
-                       rchitecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas s
-                       it aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione volu
-                       ptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, co
-                       nsectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dol
-                       ore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitatione
-                       m ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem 
-                       vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae co
-                      nsequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                </p>
-                <span class='likes'>
-                    <i class="far fa-thumbs-up"></i>
-                    <span class='like'>12</span>
-                    <i class="far fa-thumbs-down"></i>
-                    <span class='unlike'>0</span>
-                </span>
-                <span class='date_other'>12. 02. 2020</span>
-                <span class='comments'>
-                    <i class="far fa-comment"></i>
-                    <span class='comments_s'>2</span>
-                </span>
-                <hr class='other_page_hr' />                
-            </div>
-            <div class='news_divs'>
-                <h2 id='news_h2'>Coronavirus: China advises against travel to Wuhan as deaths surge</h2>
-                <p id='news_p'>
-                    <img src='Images/culture_img/culture_other_1.jpg' alt='Not found!' id='news_img' />
-                    <em>L</em>orem ipsum dolor sit, amet consectetur adipisicing elit. Quod harum asperiores por
-                    ro voluptate maxime iste est? Nostrum reiciendis doloremque vel perspiciat
-                    is. Possimus, veniam laudantium at amet molestias quis doloremque fugiat?
-                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sun
-                    t explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                     magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia 
-                     dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut la
-                     bore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exerci
-                     tationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-                      vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, ve
-                      l illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus
-                      antium doloremque laudantium, totam rem aperiam, eaque ipsa quae 
-                      ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt 
-                      explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit au
-                      t fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi ne
-                      sciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu
-                      r, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore ma
-                      nam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam co
-                      rporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure r
-                      eprehenderit qui in ea voluptate velit esse quam nihil moles
-                      tiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                       laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi a
-                       rchitecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas s
-                       it aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione volu
-                       ptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, co
-                       nsectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dol
-                       ore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitatione
-                       m ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem 
-                       vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae co
-                      nsequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                </p>
-                <span class='likes'>
-                    <i class="far fa-thumbs-up"></i>
-                    <span class='like'>12</span>
-                    <i class="far fa-thumbs-down"></i>
-                    <span class='unlike'>0</span>
-                </span>
-                <span class='comments'>
-                    <i class="far fa-comment"></i>
-                    <span class='comments_s'>2</span>
-                </span>
-                <hr class='other_page_hr' />                    
-            </div>
-            <div class='news_divs'>
-                <h2 id='news_h2'>Coronavirus: China advises against travel to Wuhan as deaths surge</h2>
-                <p id='news_p'>
-                    <img src='Images/culture_img/culture_other_1.jpg' alt='Not found!' id='news_img' />
-                    <em>L</em>orem ipsum dolor sit, amet consectetur adipisicing elit. Quod harum asperiores por
-                    ro voluptate maxime iste est? Nostrum reiciendis doloremque vel perspiciat
-                    is. Possimus, veniam laudantium at amet molestias quis doloremque fugiat?
-                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sun
-                    t explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                     magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia 
-                     dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut la
-                     bore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exerci
-                     tationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-                      vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, ve
-                      l illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus
-                      antium doloremque laudantium, totam rem aperiam, eaque ipsa quae 
-                      ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt 
-                      explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit au
-                      t fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi ne
-                      sciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu
-                      r, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore ma
-                      nam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam co
-                      rporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure r
-                      eprehenderit qui in ea voluptate velit esse quam nihil moles
-                      tiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                       laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi a
-                       rchitecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas s
-                       it aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione volu
-                       ptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, co
-                       nsectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dol
-                       ore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitatione
-                       m ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem 
-                       vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae co
-                      nsequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                </p>
-                <span class='likes'>
-                    <i class="far fa-thumbs-up"></i>
-                    <span class='like'>12</span>
-                    <i class="far fa-thumbs-down"></i>
-                    <span class='unlike'>0</span>
-                </span>
-                <span class='comments'>
-                    <i class="far fa-comment"></i>
-                    <span class='comments_s'>2</span>
-                </span>
-                <hr class='other_page_hr' />                    
-            </div>
-            <div class='news_divs'>
-                <h2 id='news_h2'>Coronavirus: China advises against travel to Wuhan as deaths surge</h2>
-                <p id='news_p'>
-                    <img src='Images/culture_img/culture_other_1.jpg' alt='Not found!' id='news_img' />
-                    <em>L</em>orem ipsum dolor sit, amet consectetur adipisicing elit. Quod harum asperiores por
-                    ro voluptate maxime iste est? Nostrum reiciendis doloremque vel perspiciat
-                    is. Possimus, veniam laudantium at amet molestias quis doloremque fugiat?
-                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sun
-                    t explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                     magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia 
-                     dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut la
-                     bore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exerci
-                     tationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-                      vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, ve
-                      l illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus
-                      antium doloremque laudantium, totam rem aperiam, eaque ipsa quae 
-                      ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt 
-                      explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit au
-                      t fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi ne
-                      sciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu
-                      r, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore ma
-                      nam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam co
-                      rporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure r
-                      eprehenderit qui in ea voluptate velit esse quam nihil moles
-                      tiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                       laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi a
-                       rchitecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas s
-                       it aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione volu
-                       ptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, co
-                       nsectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dol
-                       ore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitatione
-                       m ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem 
-                       vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae co
-                      nsequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                </p>
-                <span class='likes'>
-                    <i class="far fa-thumbs-up"></i>
-                    <span class='like'>12</span>
-                    <i class="far fa-thumbs-down"></i>
-                    <span class='unlike'>0</span>
-                </span>
-                <span class='comments'>
-                    <i class="far fa-comment"></i>
-                    <span class='comments_s'>2</span>
-                </span>
-                <hr class='other_page_hr' />    
-            </div>
-            <div class='news_divs'>
-                <h2 id='news_h2'>Coronavirus: China advises against travel to Wuhan as deaths surge</h2>
-                <p id='news_p'>
-                    <img src='Images/culture_img/culture_other_1.jpg' alt='Not found!' id='news_img' />
-                    <em>L</em>orem ipsum dolor sit, amet consectetur adipisicing elit. Quod harum asperiores por
-                    ro voluptate maxime iste est? Nostrum reiciendis doloremque vel perspiciat
-                    is. Possimus, veniam laudantium at amet molestias quis doloremque fugiat?
-                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sun
-                    t explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                     magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia 
-                     dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut la
-                     bore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exerci
-                     tationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-                      vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, ve
-                      l illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus
-                      antium doloremque laudantium, totam rem aperiam, eaque ipsa quae 
-                      ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt 
-                      explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit au
-                      t fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi ne
-                      sciunt. Neque porro quisquam est, qorem ipsum dolor sit, amet consectetur adipisicing elit. Quod harum asperiores por
-                      ro voluptate maxime iste est? Nostrum reiciendis doloremque vel perspiciat
-                      is. Possimus, veniam laudantium at amet molestias quis doloremque fugiat?
-                      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                      totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sun
-                      t explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                       magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia 
-                       dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut la
-                       bore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exerci
-                       tationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-                        vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, ve
-                        l illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus
-                        antium doloremque laudantium, totam rem aperiam, eaque ipsa quae 
-                        ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt 
-                        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit au
-                        t fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi ne
-                        sciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu
-                        r, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore ma
-                        nam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam co
-                        rporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure r
-                        eprehenderit qui in ea voluptate velit esse quam ui dolorem ipsum quia dolor sit amet, consectetu
-                      r, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore ma
-                      nam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam co
-                      rporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure r
-                      eprehenderit qui in ea voluptate velit esse quam nihil moles
-                      tiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                       laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi a
-                       rchitecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas s
-                       it aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione volu
-                       ptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, co
-                       nsectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dol
-                       ore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitatione
-                       m ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem 
-                       vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae co
-                      nsequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                </p>
-                <span class='likes'>
-                    <i class="far fa-thumbs-up"></i>
-                    <span class='like'>12</span>
-                    <i class="far fa-thumbs-down"></i>
-                    <span class='unlike'>0</span>
-                </span>
-                <span class='comments'>
-                    <i class="far fa-comment"></i>
-                    <span class='comments_s'>2</span>
-                </span>
-                <hr class='other_page_hr' />                    
-            </div>
-            <div class='news_divs'>
-                <h2 id='news_h2'>Coronavirus: China advises against travel to Wuhan as deaths surge</h2>
-                <p id='news_p'>
-                    <img src='Images/culture_img/culture_other_1.jpg' alt='Not found!' id='news_img' />
-                    <em>L</em>orem ipsum dolor sit, amet consectetur adipisicing elit. Quod harum asperiores por
-                    ro voluptate maxime iste est? Nostrum reiciendis doloremque vel perspiciat
-                    is. Possimus, veniam laudantium at amet molestias quis doloremque fugiat?
-                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sun
-                    t explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                     magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia 
-                     dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut la
-                     bore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exerci
-                     tationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-                      vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, ve
-                      l illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus
-                      antium doloremque laudantium, totam rem aperiam, eaque ipsa quae 
-                      ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt 
-                      explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit au
-                      t fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi ne
-                      sciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu
-                      r, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore ma
-                      nam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam co
-                      rporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure r
-                      eprehenderit qui in ea voluptate velit esse quam nihil moles
-                      tiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                       laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi a
-                       rchitecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas s
-                       it aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione volu
-                       ptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, co
-                       nsectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dol
-                       ore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitatione
-                       m ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem 
-                       vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae co
-                      nsequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                </p>
-                <span class='likes'>
-                    <i class="far fa-thumbs-up"></i>
-                    <span class='like'>12</span>
-                    <i class="far fa-thumbs-down"></i>
-                    <span class='unlike'>0</span>
-                </span>
-                <span class='comments'>
-                    <i class="far fa-comment"></i>
-                    <span class='comments_s'>2</span>
-                </span>
-                <hr class='other_page_hr' />                    
+        <h1 id='news_h1'>Newest</h1>
 
-                <h2 id='news_h2'>Coronavirus: China advises against travel to Wuhan as deaths surge</h2>
-                <p id='news_p'>
-                    <img src='Images/culture_img/culture_other_1.jpg' alt='Not found!' id='news_img' />
-                    <em>L</em>orem ipsum dolor sit, amet consectetur adipisicing elit. Quod harum asperiores por
-                    ro voluptate maxime iste est? Nostrum reiciendis doloremque vel perspiciat
-                    is. Possimus, veniam laudantium at amet molestias quis doloremque fugiat?
-                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sun
-                    t explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                     magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia 
-                     dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut la
-                     bore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exerci
-                     tationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-                      vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, ve
-                      l illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus
-                      antium doloremque laudantium, totam rem aperiam, eaque ipsa quae 
-                      ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt 
-                      explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit au
-                      t fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi ne
-                      sciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu
-                      r, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore ma
-                      nam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam co
-                      rporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure r
-                      eprehenderit qui in ea voluptate velit esse quam nihil moles
-                      tiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                       laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi a
-                       rchitecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas s
-                       it aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione volu
-                       ptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, co
-                       nsectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dol
-                       ore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitatione
-                       m ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem 
-                       vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae co
-                      nsequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                </p>
-                <span class='likes'>
-                    <i class="far fa-thumbs-up"></i>
-                    <span class='like'>12</span>
-                    <i class="far fa-thumbs-down"></i>
-                    <span class='unlike'>0</span>
-                </span>
-                <span class='comments'>
-                    <i class="far fa-comment"></i>
-                    <span class='comments_s'>2</span>
-                </span>
-                <hr class='other_page_hr' />                    
+            <div id='news_divs'>
+
             </div>
-            
-        </div>
+      
 
  <!-- Footer -->
 

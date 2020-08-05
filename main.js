@@ -25,6 +25,7 @@ let menu_bar_x = 0;
 
 let menu_bar = document.querySelector('#menu_bar');
 let mini_nav = document.querySelector('.main_mini_nav_span_inactive');
+let mini_nav_items = document.querySelectorAll('.main_mini_nav_span');
 
 	menu_bar.addEventListener('click', () => {
 		if(menu_bar_x == 0) {
@@ -38,6 +39,13 @@ let mini_nav = document.querySelector('.main_mini_nav_span_inactive');
 			menu_bar_x = menu_bar_x-1;
 		}
 	});
+
+	mini_nav_items.forEach(e => {
+		e.addEventListener('click', () => {
+			mini_nav.classList.remove('main_mini_nav_span_active');
+			menu_bar_x = menu_bar_x - 1;
+		})
+});
 
 
 //date 
@@ -67,6 +75,23 @@ let section_mini_tab_pol = document.querySelector('#sec_mini_tab_pol');
 let section_mini_tab_sp = document.querySelector('#sec_mini_tab_sp');
 let section_mini_tab_mus = document.querySelector('#sec_mini_tab_mus');
 let section_mini_tab_cul = document.querySelector('#sec_mini_tab_cul');
+let section_main_pol = document.querySelector('#section_main_pol');
+let section_main_sports = document.querySelector('#section_main_sports');
+let section_main_mus = document.querySelector('#section_main_mus');
+let section_main_cult = document.querySelector('#section_main_cult');
+
+section_main_pol.addEventListener('click', e => {
+	window.open('news_single.html#main_pol');
+});
+section_main_sports.addEventListener('click', e => {
+	window.open('news_single.html#sports_first');
+});
+section_main_mus.addEventListener('click', e => {
+	window.open('news_single.html#music_first');
+});
+section_main_cult.addEventListener('click', e => {
+	window.open('news_single.html#culture_main');
+});
 
 let section = [];
 
@@ -104,7 +129,6 @@ section_mini_h3.forEach(e => {
 				ctr_mini_section_2--;				
 			}
 			console.log(section[1]);
-
 		}
 		if(x == 4) {
 			if(ctr_mini_section_4 == 1) {
@@ -197,7 +221,9 @@ let sports_div = document.querySelectorAll('.sports_div');
 
 //tehnologies 
 
-window.addEventListener('click', () => {
+let technologies = document.querySelector('#technologies');
+
+technologies.addEventListener('click', () => {
  	let tech_video = document.querySelector('.video_tech');
 	tech_video.play();
 })
@@ -236,8 +262,9 @@ let culture_other = document.querySelectorAll('.culture_other');
 //astronomy 
 
 let astr_h = document.querySelector('#astr_h');
+let astronomy = document.querySelector('#astronomy');
 
-window.addEventListener('click', () => {
+astronomy.addEventListener('click', () => {
 let astr_video = document.querySelector('.video_astr');
    astr_video.play();
 })
@@ -276,20 +303,14 @@ let c = 0;
 let cc = 0;
 
 fetch("https://akademac.github.io/MBN_Api/mbn.json")
-.then(response => response.json(), {
-	method: "GET",
-	mode: "corse",
-	cach: "no-cache",
-	headers: {
-		"Content-type": "aplication/json"
-	},
-	
-}) 
+.then(response => {
+	return  response.json()}) 
 .then(data => {
 	fetching_data_lp(data);
+	fetching_data_sec(data);
 })
 .catch((err) => {
-		console.log(`Something is wrong > ${err}`);
+		console.log(`Something went wrong > ${err}`);
 	}
 );
 
@@ -339,10 +360,213 @@ let fetching_data_lp = d => {
 
 // Second Page NEWS
 
+let second_page = document.querySelectorAll('.second_page');
 
-newest.forEach(e => {
-	e.addEventListener('click', () => {
-		window.open('news.html', '_self');
+second_page.forEach(e => {
+	e.addEventListener('click', ee => {
+		let second_pages = ee.target.dataset.second_page;
+		for(let i=1; i<=second_page.length; i++) {
+			if(second_pages == i) {
+				window.open(`news.html#${i}`, '_self');
+				console.log(i);
+			}	
+		}
 	});
 });
+
+//sports FILTER
+
+let current = document.querySelector('#actual');
+let football = document.querySelector('#football');
+let basketball = document.querySelector('#basketball');
+let tennis = document.querySelector('#tennis');
+let others = document.querySelector('#others');
+
+current.addEventListener('click', e  => {
+	window.open('news.html#current', '_self');
+});
+
+football.addEventListener('click', e  => {
+	window.open('news.html#football', '_self');
+});
+
+basketball.addEventListener('click', e  => {
+	window.open('news.html#basketball', '_self');
+});
+
+tennis.addEventListener('click', e  => {
+	window.open('news.html#tennis', '_self');
+});
+
+
+others.addEventListener('click', e  => {
+	window.open('news.html#others', '_self');
+});
+
+//third page
+
+
+//newst
+
+newest.forEach(ee => {
+	ee.addEventListener('click', e => {
+		let newest_single = e.target.dataset.newest;
+		for(let i=-1; i<newest.length; i++) {
+			console.log(i);
+			if(newest_single == i) {
+				window.open(`news_single.html#${i}`, '_self');
+			}
+		}; 
+	});
+});
+
+//politics
+
+main_pol_div_h.addEventListener('click', () => {
+	window.open(`news_single.html#main_pol`, '_self');
+})
+
+pol_other.forEach(e => {
+	e.addEventListener('click', el => {
+		let pol_other_t = el.target.dataset.pol;
+		if(pol_other_t == 'pol_first') {
+			window.open(`news_single.html#pol_first`, '_self');
+		}
+		else if(pol_other_t == 'pol_second') {
+			window.open(`news_single.html#pol_second`, '_self');
+		}
+		else if(pol_other_t == 'pol_third') {
+			window.open(`news_single.html#pol_third`, '_self');
+		}
+		else if(pol_other_t == 'pol_fourth') {
+			window.open(`news_single.html#pol_fourth`, '_self');
+		}
+	})
+});
+
+//sports
+
+sports_div.forEach(e => {
+	e.addEventListener('click', el => {
+		let sports_divs = el.target.dataset.sports;
+		if(sports_divs == 'sport_first') {
+			window.open(`news_single.html#sports_first`, '_self');
+		}
+		else if(sports_divs == 'sport_second') {
+			window.open(`news_single.html#sports_second`, '_self');
+		}
+		else if(sports_divs == 'sport_third') {
+			window.open(`news_single.html#sports_third`, '_self');
+		}
+		else if(sports_divs == 'sport_fourth') {
+			window.open(`news_single.html#sports_fourth`, '_self');
+		}
+	})
+});
+
+//music
+
+music_read_more.forEach(e => {
+	e.addEventListener('click', el => {
+		let music_divs = el.target.dataset.music;
+		if(music_divs == 'music_first') {
+			window.open(`news_single.html#music_first`, '_self');
+		}
+		else if(music_divs == 'music_second') {
+			window.open(`news_single.html#music_second`, '_self');
+		}
+		else if(music_divs == 'music_third') {
+			window.open(`news_single.html#music_third`, '_self');
+		}
+		else if(music_divs == 'music_fourth') {
+			window.open(`news_single.html#music_fourth`, '_self');
+		}
+		else if(music_divs == 'music_fifth') {
+			window.open(`news_single.html#music_fifth`, '_self');
+		}
+	})
+})
+
+//culture
+
+culture_main_heading.addEventListener('click', () => {
+	window.open(`news_single.html#culture_main`, '_self');
+})
+
+culture_other.forEach(e => {
+	e.addEventListener('click', el => {
+		let culture_divs = el.target.dataset.culture;
+		if(culture_divs == 'culture_first') {
+			window.open(`news_single.html#culture_first`, '_self');
+		}
+		else if(culture_divs == 'culture_second') {
+			window.open(`news_single.html#culture_second`, '_self');
+		}
+		else if(culture_divs == 'culture_third') {
+			window.open(`news_single.html#culture_third`, '_self');
+		}
+	})
+})
+
+
+//mini section filter
+
+let sec_likes = document.querySelectorAll('.sec_likes');
+let sec_unlikes = document.querySelectorAll('.sec_unlikes');
+let sec_comments = document.querySelectorAll('.sec_comments');
+
+sec_likes.forEach(e => {
+	e.addEventListener('click', ee => {
+	let sec_likes_each = ee.target.dataset.most_likes;
+		if(sec_likes_each == 'most_likes_politics') {
+			window.open('news.html#most_likes_politics', '_self');
+		}
+		else if(sec_likes_each == 'most_likes_sports') {
+			window.open('news.html#most_likes_sports', '_self');
+		}
+		else if(sec_likes_each == 'most_likes_music') {
+			window.open('news.html#most_likes_music', '_self');
+		}
+		else if(sec_likes_each == 'most_likes_culture') {
+			window.open('news.html#most_likes_culture', '_self');
+		}		
+	});
+});
+
+sec_unlikes.forEach(e => {
+	e.addEventListener('click', ee => {
+	let sec_unlikes_each = ee.target.dataset.most_unlikes;
+		if(sec_unlikes_each == 'most_unlikes_politics') {
+			window.open('news.html#most_unlikes_politics', '_self');
+		}
+		else if(sec_unlikes_each == 'most_unlikes_sports') {
+			window.open('news.html#most_unlikes_sports', '_self');
+		}
+		else if(sec_unlikes_each == 'most_unlikes_music') {
+			window.open('news.html#most_unlikes_music', '_self');
+		}
+		else if(sec_unlikes_each == 'most_unlikes_culture') {
+			window.open('news.html#most_unlikes_culture', '_self');
+		}		
+	});
+});
+
+sec_comments.forEach(e => {
+	e.addEventListener('click', ee => {
+	let sec_comments_each = ee.target.dataset.most_comments;
+		if(sec_comments_each == 'most_comments_politics') {
+			window.open('news.html#most_comments_politics', '_self');
+		}
+		else if(sec_comments_each == 'most_comments_sports') {
+			window.open('news.html#most_comments_sports', '_self');
+		}
+		else if(sec_comments_each == 'most_comments_music') {
+			window.open('news.html#most_comments_music', '_self');
+		}
+		else if(sec_comments_each == 'most_comments_culture') {
+			window.open('news.html#most_comments_culture', '_self');
+		}		
+	});
+});
+
 
