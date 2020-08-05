@@ -385,6 +385,11 @@ hr {
 	justify-content: center;
 }
 
+#politics_h:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
 #politics {
 	width: 85%;
 	height: 40rem;
@@ -394,7 +399,11 @@ hr {
 	grid-gap: 5px;
 	border-left: 1px solid #c2c2c2;
 	border-top: 1px solid #c2c2c2;
+}
 
+#main_pol_div_h:hover {
+	cursor: pointer;
+	text-decoration: underline;
 }
 
 #main_pol_div {
@@ -405,10 +414,7 @@ hr {
 	border-radius: 5px;
 }
 
-#main_pol_div:hover {
-	text-decoration: underline;
-	cursor: pointer;
-}
+
 
 #main_pol_div_img {
 	/* background-image: url('Images/politics_img/main_pol_img.jpg'); */
@@ -428,7 +434,7 @@ hr {
 	border-bottom: 1px solid #c2c2c2;
 }
 
-.pol_other:hover {
+.pol_other_h3:hover {
 	text-decoration: underline;
 	cursor: pointer;
 }
@@ -446,7 +452,6 @@ hr {
 	padding-top: 1rem;
 	background: var(--mainWhite);
 	box-shadow: 1px 1px 5px var(--mainGrey);
-
 }
 
 #all_sports {
@@ -456,6 +461,7 @@ hr {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	grid-gap: 2px;
+	text-align: center;
 }
 
 .all_sports {
@@ -537,6 +543,7 @@ hr {
 	width: 85%;
 	height: 44.75rem;
 	margin: 0rem auto;
+	cursor: pointer;
 
 }
 
@@ -555,6 +562,10 @@ hr {
 	border-radius: 2px;
 	position: absolute;
 	cursor: pointer;
+}
+
+#tech_h:hover {
+	text-decoration: underline;
 }
 
 #video_div_tech {
@@ -760,7 +771,7 @@ hr {
 	cursor: pointer;
 }
 
-#culture_main_heading:hover {
+#eading:hover {
 	text-decoration: underline;
 }
 
@@ -801,6 +812,7 @@ hr {
 	height: 44.75rem;
 	margin: 0rem auto;
 	/* box-shadow: 1px 1px 5px var(--mainGrey); */
+	cursor: pointer;
 
 }
 
@@ -880,21 +892,6 @@ hr {
 	padding: 2rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Other Pages (newest) */
 
 #wrap_div {
@@ -930,6 +927,15 @@ hr {
 
 }
 
+#news_h1 {
+	margin: 0rem auto;
+	margin-top: -4rem;
+	text-align: center;
+	font-size: 4rem;
+	font-family: 'Bowlby One SC', cursive;
+	color: red;
+}
+
 em {
 	font-size: 2rem;
 	font-weight: bold;
@@ -942,11 +948,14 @@ em {
 	padding: 1rem;
 	font-size: 1.3rem;
 	line-height: 2.5rem;
+	float: left;
 }
 
 #news_img {
 	float: right;
 	padding: 1rem;
+	width: 30rem;
+	height: 20rem;
 }
 
 .likes, .comments {
@@ -972,10 +981,93 @@ em {
 	float: right;
 }
 
+/* Other pages (news single) */
 
+#main_single_h1 {
+	margin: 0rem auto;
+	padding-top: 6rem;
+	margin-bottom: -4rem;
+	text-align: center;
+	font-size: 4rem;
+	font-family: 'Bowlby One SC', cursive;
+	color: red;
+}
 
+#news_single_main_div {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 65% 35%;
+	padding-top: 10rem;
+}
 
-							/* Media querys */
+#main_single_news_h2 {
+	margin: 0px auto;
+	margin-bottom: 3rem;
+	width: 95%;
+	font-size: 2rem;
+	text-align: center;
+}
+
+#main_single_news_img {
+	width: 95%;
+	height: 35rem;
+	display: block;
+	margin: 2rem auto;
+}
+
+#main_single_news_p {
+	width: 95%;
+	margin: 1rem auto;
+	font-size: 1.5rem;
+	line-height: 2;
+	margin-bottom: 4rem;
+}
+
+#main_single_news {
+	border-right: 2px dotted black;
+}
+
+.single_likes {
+	padding: 1rem;
+	font-size: 1.2rem;
+}
+
+.sinlge_comments {
+	margin-right: 2rem;
+	margin-top: -1rem;
+}
+
+#other_single_news {
+	display: block;
+}
+
+.other_single_newss {
+	margin-left: 1rem;
+	display: grid;
+	grid-template-columns: 35% 65%;
+	margin-bottom: 2rem;
+}
+
+.other_single_newss:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.other_single_img {
+	width: 10rem;
+	height: 7rem;
+	display: inline;
+}
+
+.other_single_h3 {
+	width: 70%;
+	margin-top: 0rem;
+	margin-left: 1rem;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+											/* Media querys */
 
 @media screen and (max-width: 1200px) {
 	/* Nav bar */
@@ -1014,6 +1106,30 @@ em {
 	.newest {
 		font-size: .7rem;
 	} 
+
+	/* Single news Page */
+
+	#news_single_main_div {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 55% 45%;
+		padding-top: 10rem;
+	}
+	
+	.other_single_img {
+		width: 8rem;
+		height: 5rem;
+		display: inline;
+	}
+	
+	.other_single_h3 {
+		width: 70%;
+		margin-top: .3rem;
+		margin-left: .4rem;
+		font-size: .9rem;
+		line-height: 1.2;
+	}
+		
 	
 }
 
@@ -1055,6 +1171,29 @@ em {
 	
 	.music_desc > p {
 		font-size: .8rem;
+	}
+
+	/* Single news Page */
+
+	#news_single_main_div {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 55% 45%;
+		padding-top: 10rem;
+	}
+
+	.other_single_img {
+		width: 7rem;
+		height: 4rem;
+		display: inline;
+	}
+
+	.other_single_h3 {
+		width: 70%;
+		margin-top: .3rem;
+		margin-left: .1rem;
+		font-size: .8rem;
+		line-height: 1;
 	}
 	
 }
@@ -1197,6 +1336,115 @@ em {
 
 	#footer_p {
 		text-align: center;
+	}
+
+
+	/* News Page */
+
+	#news_h1 {
+		margin: 0rem auto;
+		margin-top: -4rem;
+		text-align: center;
+		font-size: 2rem;
+		font-family: 'Bowlby One SC', cursive;
+		color: red;
+	}
+
+	#news_img {
+		float: none;
+		padding: 1rem;
+		width: 15rem;
+		height: 7rem;
+		display: block;
+		margin: 0px auto;
+	}
+
+	#news_p {
+		color: var(--mainGrey);
+		overflow-wrap: normal;
+		padding: 1rem;
+		font-size: 1rem;
+		line-height: 1.5rem;
+		float: left;
+		text-align: center;
+	}
+
+
+	.likes, .comments {
+		padding: 1rem;
+		font-size: .7rem;
+	}
+	
+	.likes {
+		margin-left: .5rem;
+	}
+	
+	
+	.comments {
+		margin-right: 0rem;
+		margin-top: -.8rem;
+	}
+	
+	.fa-thumbs-down {
+		margin-left: 1.2rem;
+	}
+
+	/* Single news Page */
+
+	#news_single_main_div {
+		width: 100%;
+		display: grid;
+		grid-template-columns: none;
+		grid-template-rows: none;
+		padding-top: 10rem;
+		text-align: center;
+	}
+
+	#main_single_news_img {
+		width: 95%;
+		height: 15rem;
+		display: block;
+		margin: 2rem auto;
+	}
+
+	
+	#main_single_news {
+		border-right: none;
+		border-bottom: 2px dotted #000;
+	}
+
+	
+	.sinlge_comments {
+		margin-right: 10rem;
+		margin-top: -1rem;
+	}
+	
+	.other_single_img {
+		width: 8rem;
+		height: 5rem;
+		display: inline;
+	}
+	
+	.other_single_h3 {
+		width: 70%;
+		/* margin-top: .3rem;
+		margin-left: .4rem;
+		font-size: .9rem; */
+		line-height: 1.2;
+		margin: 0px auto;
+	}
+
+	#other_single_news {
+		display: block;
+		text-align: center;
+	}
+
+	.other_single_newss {
+		margin-left: 3rem auto;
+		display: inline;
+		height: 10rem;
+		grid-template-columns: none;
+		margin-bottom: 5rem;
 	}
 		
 }
